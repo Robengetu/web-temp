@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Toggle skills display
 function toggleSkills(header) {
     const items = header.nextElementSibling;
     items.classList.toggle('active');
@@ -17,7 +15,6 @@ function toggleSkills(header) {
     icon.classList.toggle('fa-chevron-up');
 }
 
-// Scroll to top functionality
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -25,7 +22,6 @@ function scrollToTop() {
     });
 }
 
-// Form validation
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
     alert('Thank you for your message!');
